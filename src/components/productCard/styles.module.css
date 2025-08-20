@@ -1,0 +1,74 @@
+.productsWrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 45px;
+}
+
+.productsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 386px);
+  gap: 131px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 172px;
+  width: 386px;
+  height: 393px;
+  border: 0.5px solid #6866665b;
+  border-radius: 42px;
+  padding: 49px 54px 39px 39px;
+  background: #fff;
+}
+
+.image {
+  width: 278px;
+  height: 127px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.title {
+  margin-top: 32px;
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 42px;
+}
+
+.priceButtonWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+
+  color: #666666;
+  font-size: 14px;
+}
+
+.priceValue {
+  font-weight: bold;
+  font-size: 24px;
+  color: black;
+}
+.add {
+  width: 37px;
+  height: 37px;
+}
+button {
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 0;
+  width: 37px;
+  height: 37px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

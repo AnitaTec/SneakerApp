@@ -1,7 +1,16 @@
-/* .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+.products {
   max-width: 1420px;
-} */
+  width: 100%;
+  margin: 72px auto 0;
+}
+
+.products h1 {
+  margin: 0 0 37px 0;
+  text-align: left;
+  font-size: 36px;
+}
+
+.products hr {
+  width: 100%;
+  border: 1px solid #eaeaea;
+}
