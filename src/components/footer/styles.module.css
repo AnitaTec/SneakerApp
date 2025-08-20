@@ -1,0 +1,51 @@
+.footer {
+  background-color: #232425;
+  color: #ffffff87;
+  display: flex;
+  justify-content: space-between;
+
+  padding: 66px 250px 48px 250px;
+}
+
+.info {
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 39px;
+}
+
+.contactInfo {
+  font-size: 18px;
+  margin-bottom: 93px;
+  gap: 13px;
+}
+
+.email {
+  margin-top: 13px;
+}
+
+.year {
+  font-size: 20px;
+}
+
+.links {
+  display: flex;
+  justify-content: end;
+  gap: 26px;
+  margin-bottom: 170px;
+}
+
+.footerInput {
+  background-color: #232425;
+  border: none;
+  border-bottom: 1px solid #ffffff87;
+  width: 407px;
+  color: #ffffff;
+  padding: 8px 4px;
+  outline: none;
+  padding: 0 0 15px 0;
+}
+
+.footerInput::placeholder {
+  font-size: 20px;
+  color: #ffffff87;
+}

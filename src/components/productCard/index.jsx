@@ -2,8 +2,8 @@ import { useState, useEffect } from "react";
 import { BASE_URL } from "../../context/cartContext";
 import axios from "axios";
 import styles from "./styles.module.css";
-import addImg from "../../assets/icons/add.svg"; // светлая
-import addImgDark from "../../assets/icons/add-dark.svg"; // тёмная
+import addImg from "../../assets/icons/add.svg";
+import addImgDark from "../../assets/icons/add-dark.svg";
 
 function ProductCard() {
   const [products, setProducts] = useState([]);
