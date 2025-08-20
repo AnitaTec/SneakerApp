@@ -1,0 +1,12 @@
+.banner {
+  margin: 28px auto 0;
+  max-width: 1420px;
+  width: 100%;
+}
+
+.banner img {
+  max-width: 1420px;
+  width: 100%;
+  aspect-ratio: 1420 / 530;
+  height: auto;
+}
