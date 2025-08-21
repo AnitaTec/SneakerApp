@@ -25,15 +25,9 @@ function ProductCard() {
   return (
     <div className={styles.productsWrapper}>
       <div className={styles.productsGrid}>
-        {products.slice(0, 3).map(({ id, name, price }) => (
+        {products.map(({ id, name, price, image }) => (
           <div key={id} className={styles.card}>
-            {products.length > 0 && (
-              <img
-                src={products[0].image}
-                alt={name}
-                className={styles.image}
-              />
-            )}
+            <img src={image} alt={name} className={styles.image} />
             <h2 className={styles.title}>{name}</h2>
             <div className={styles.priceButtonWrapper}>
               <p className={styles.price}>
