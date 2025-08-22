@@ -1,0 +1,118 @@
+.box {
+  max-width: 1420px;
+  width: 100%;
+  margin: 50px auto 0;
+  h1 {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
+}
+
+.formWrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 79px;
+  margin-bottom: 646px;
+}
+
+.contactInfo {
+  margin-top: 116px;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  color: #00000050;
+  list-style: disc;
+  padding-left: 20px;
+  gap: 13px;
+  margin-bottom: 67px;
+
+  li {
+    font-size: 18px;
+  }
+}
+
+.findUs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 458px;
+  height: 221px;
+  border-radius: 10px;
+  background-color: #fafafa;
+  color: #00000070;
+
+  p {
+    font-size: 20px;
+    margin-top: 18px;
+  }
+}
+
+.icons {
+  margin-top: 39px;
+  display: flex;
+  gap: 50px;
+}
+
+.cotactLine {
+  border: 1px solid #eaeaea;
+}
+
+.row {
+  display: flex;
+  gap: 39px;
+  margin-bottom: 20px;
+}
+
+.inputSmall {
+  width: 364px;
+  height: 66px;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: none;
+  background-color: #fafafa;
+}
+
+.textarea {
+  width: 764px;
+  height: 116px;
+  padding: 12px;
+  font-size: 18px;
+  border-radius: 10px;
+  resize: none;
+  margin-bottom: 31px;
+  background-color: #fafafa;
+  border: none;
+}
+.inputSmall::placeholder,
+.textarea::placeholder {
+  color: #00000070;
+}
+.buttonWrapper {
+  display: flex;
+  justify-content: flex-end;
+  width: 764px;
+
+  button {
+    padding: 21px 25px;
+    border-radius: 10px;
+    border: none;
+    font-size: 14px;
+    background-color: #090d1a;
+    color: #ffffff;
+    transition: all 0.2s ease;
+    cursor: pointer;
+  }
+
+  button:hover {
+    transform: scale(1.05);
+    background-color: #3a6ff6; 
+  }
+
+  button:active {
+    transform: scale(0.95);
+  }
+}

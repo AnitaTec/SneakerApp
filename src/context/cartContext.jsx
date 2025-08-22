@@ -1,7 +1,7 @@
 import { createContext, useContext, useEffect, useState } from "react";
 import axios from "axios";
 
-export const BASE_URL = "https://664623b951e227f23aadf146.mockapi.io";
+export const BASE_URL = "https://68808f33f1dcae717b628066.mockapi.io";
 
 export const CartContext = createContext();
 
@@ -48,7 +48,3 @@ const CartProvider = ({ children }) => {
 
 export const useCart = () => useContext(CartContext);
 export default CartProvider;
-// add item to cart
-// post -> BASE_URL/cartData
-// remove item from cart
-// delete -> BASE_URL/cartData/productId

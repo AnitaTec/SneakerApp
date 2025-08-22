@@ -2,15 +2,15 @@ import styles from "./styles.module.css";
 import { NavLink } from "react-router";
 const menuList = [
   {
-    title: "Main",
+    title: "Главная",
     path: "/",
   },
   {
-    title: "Cart",
+    title: "Корзина",
     path: "/cart",
   },
   {
-    title: "Contacts",
+    title: "Контакты",
     path: "/contacts",
   },
 ];

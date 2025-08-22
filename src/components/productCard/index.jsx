@@ -4,14 +4,16 @@ import axios from "axios";
 import styles from "./styles.module.css";
 import addImg from "../../assets/icons/add.svg";
 import addImgDark from "../../assets/icons/add-dark.svg";
+import { useCart } from "../../context/cartContext";
 
 function ProductCard() {
   const [products, setProducts] = useState([]);
   const [hoveredId, setHoveredId] = useState(null);
+  const { addToCart } = useCart();
 
   async function fetchProducts() {
     try {
-      const response = await axios.get(`${BASE_URL}/productData`);
+      const response = await axios.get(`${BASE_URL}/products`);
       setProducts(response.data);
     } catch (error) {
       console.error("Error occured when fetching products: ", error);
@@ -25,21 +27,28 @@ function ProductCard() {
   return (
     <div className={styles.productsWrapper}>
       <div className={styles.productsGrid}>
-        {products.map(({ id, name, price, image }) => (
-          <div key={id} className={styles.card}>
-            <img src={image} alt={name} className={styles.image} />
-            <h2 className={styles.title}>{name}</h2>
+        {products.map((product) => (
+          <div key={product.id} className={styles.card}>
+            <img
+              src={product.image}
+              alt={product.name}
+              className={styles.image}
+            />
+            <h2 className={styles.title}>{product.name}</h2>
             <div className={styles.priceButtonWrapper}>
               <p className={styles.price}>
-                Цена: <span className={styles.priceValue}>{price} €</span>
+                Цена:{" "}
+                <span className={styles.priceValue}>{product.price} €</span>
               </p>
               <button
-                onMouseEnter={() => setHoveredId(id)}
+                className={styles.addButton}
+                onClick={() => addToCart(product)}
+                onMouseEnter={() => setHoveredId(product.id)}
                 onMouseLeave={() => setHoveredId(null)}
               >
                 <img
                   className={styles.add}
-                  src={hoveredId === id ? addImgDark : addImg}
+                  src={hoveredId === product.id ? addImgDark : addImg}
                   alt="add"
                 />
               </button>
